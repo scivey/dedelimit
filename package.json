@@ -1,17 +1,23 @@
 {
   "name": "dedelimit",
   "version": "0.0.1",
-  "description": "",
+  "description": "Recreate a hierarchical Javascript object from a one-level set of delimited keys and values.",
   "main": "index.js",
   "scripts": {
     "prepublish": "coffee -c ./index.coffee ./test/test.coffee",
     "test": "mocha ./test"
   },
+  "keywords": ["inflate", "hydrate", "unflatten", "dedelimit", "reinstantiate", "delimiter"],
   "author": "Scott Ivey",
-  "license": "BSD",
+  "license": "MIT",
   "dependencies": {
     "underscore": "~1.5.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scivey/dedelimit",
+  },
+  "homepage": "https://github.com/scivey/dedelimit",
   "devDependencies": {
     "should": "~2.1.0",
     "mocha": "~1.14.0",

@@ -16,7 +16,7 @@ Takes an object with flattened key-value pairs, like this:
 
 And builds an object with the nested structure indicated by the delimited key order, like this:
 
-```
+```javascript
 {
 	user: {
 		name: {
@@ -89,7 +89,7 @@ insertDelimitedKey(_objectRef, ["user", "name", "first"], "Gary");
 
 console.log(_objectRef);
 
-//
+//	output:
 //	{
 //		user: {
 //			name: {
@@ -128,3 +128,7 @@ Contact
 https://github.com/scivey
 http://www.scivey.net
 scott.ivey@gmail.com
+
+License
+------------
+MIT
