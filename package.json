@@ -1,0 +1,20 @@
+{
+  "name": "dedelimit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "coffee -c ./index.coffee ./test/test.coffee",
+    "test": "mocha ./test"
+  },
+  "author": "Scott Ivey",
+  "license": "BSD",
+  "dependencies": {
+    "underscore": "~1.5.2"
+  },
+  "devDependencies": {
+    "should": "~2.1.0",
+    "mocha": "~1.14.0",
+    "coffee": "0.0.1"
+  }
+}
