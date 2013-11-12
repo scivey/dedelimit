@@ -56,7 +56,8 @@ dedelimit = do ->
 			splitKey = oneKey.split(options.delimiter)
 			insertDelimitedKey(_obj, splitKey, keyVals[oneKey])
 
-		callback(null, _obj)
+		process.nextTick ->
+			callback(null, _obj)
 
 module.exports =
 	dedelimit: dedelimit

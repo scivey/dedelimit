@@ -46,7 +46,9 @@
         splitKey = oneKey.split(options.delimiter);
         return insertDelimitedKey(_obj, splitKey, keyVals[oneKey]);
       });
-      return callback(null, _obj);
+      return process.nextTick(function() {
+        return callback(null, _obj);
+      });
     };
   })();
 

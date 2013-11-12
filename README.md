@@ -55,7 +55,7 @@ dedelimit(flattenedKeys, function(err, restoredObject) {
 });
 ```
 
-`dedelimit` has an async interface, but the implementation is currently synchronous.  A future version may split the task into several async chunks if there are large number of keys, but right now that doesn't seem necessary.
+`dedelimit` has an async interface, but the implementation is basically synchronous -- the call is returned on `process.nextTick`.  It's async because a future version may split the task into several async chunks if there are large number of keys, but so far that doesn't seem necessary.
 
 `dedelimit` can also take an options object as its second argument, which currently provides a `delimiter` attribute for customizing the delimiter used to split the original keys into sequences.  The delimiter defaults to a single period (".").  If an options object is passed, `dedelimit` expects a callback as its third argument.
 
