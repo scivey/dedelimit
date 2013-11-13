@@ -47,7 +47,7 @@ var flattenedKeys = {
 	"user.name.first": "Tim",
 	"user.name.last": "Generic",
 	"user.age": 27,
-	"user.messages.latest": ["Pick up the pace, Tim."],
+	"user.messages.latest": ["Really, Tim?  Just... really?"],
 };
 
 dedelimit(flattenedKeys, function(err, restoredObject) {
@@ -66,7 +66,7 @@ var flattenedKeys = {
 	"user,name,first": "Tim",
 	"user,name,last": "Generic",
 	"user,age": 27,
-	"user,messages,latest": ["Pick up the pace, Tim."],
+	"user,messages,latest": ["Sometimes I wonder about you, Tim."],
 };
 
 dedelimit(flattenedKeys, {delimiter: ","}, function(err, restoredObject) {
