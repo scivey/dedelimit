@@ -1,6 +1,6 @@
 {
   "name": "dedelimit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Recreate a hierarchical Javascript object from a one-level set of delimited keys and values.",
   "main": "index.js",
   "scripts": {
