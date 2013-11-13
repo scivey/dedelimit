@@ -149,7 +149,7 @@ app.post("/customers/:id", function(req, res) {
 		// model to update properties in persistence layer
 	});
 
-	res.redirect("/customers/ + _id);
+	res.redirect("/customers/" + _id);
 });
 ```
 This can easily be implemented as middleware for a group of form-handling routes.
