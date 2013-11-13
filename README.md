@@ -121,7 +121,7 @@ API
 
 Use Cases
 ------------
-This module was created to recreate objects from delimited property lists in the `name` attributes of HTML form inputs, e.g. from the following Handlebars view:
+This module was created to rebuild objects from delimited property lists in the `name` attributes of HTML form inputs, e.g. from the following Handlebars view:
 
 ```html
 <form action="/customers/{{_id}}" method="post">
@@ -133,7 +133,7 @@ This module was created to recreate objects from delimited property lists in the
 </form>
 ```
 
-`dedelimit` can be used to recreate objects from flattened keys on the client-side or server-side.  In the most straightforward case, this form will just be serialized and passed via POST call to `/api/customers`, with no further action on the client side.  Recreating the original object is pointless there.  If client-side models also need updating, then handling it client-side is more important.
+`dedelimit` can be used to recreate objects from flattened keys on the client-side or server-side.  In the most straightforward case, this form will just be serialized and passed via POST call to `/api/customers`, with no further action on the client side.  Recreating the original object is pointless there.  If client-side models also need updating, then handling it in-browser is more important.
 
 Used server-side with Express, parsing the form looks like this:
 ```javascript
